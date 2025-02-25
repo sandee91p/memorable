@@ -1,0 +1,2 @@
+-keep class com.ztest.*
+-keep class org.com.android.internal.R$styleable { *; }

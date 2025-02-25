@@ -1,0 +1,12 @@
+package org.android.app;
+
+import android.content.Intent;
+import android.os.IBinder;
+
+import org.Reflector;
+
+public class IActivityManagerL {
+    public static final Reflector REF = Reflector.on("android.app.IActivityManager");
+
+    public static Reflector.MethodWrapper<Boolean> finishActivity = REF.method("finishActivity", IBinder.class, int.class, Intent.class, boolean.class);
+}
